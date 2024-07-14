@@ -40,31 +40,40 @@ public class game extends javax.swing.JFrame {
     private void initComponents() {
 
         container = new javax.swing.JPanel();
-        pnlDash = new javax.swing.JPanel();
+        dashboardPage = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
-        btnSU = new javax.swing.JButton();
-        btLogin = new javax.swing.JButton();
-        btExitProgram = new javax.swing.JButton();
-        pnlLogin = new javax.swing.JPanel();
-        txtNameLog = new javax.swing.JTextField();
-        txtPassLog = new javax.swing.JPasswordField();
-        jLabel4 = new javax.swing.JLabel();
-        btStart = new javax.swing.JButton();
-        btGuest1 = new javax.swing.JButton();
-        btBack = new javax.swing.JButton();
-        pnlSignUp = new javax.swing.JPanel();
+        daftar = new javax.swing.JButton();
+        masuk = new javax.swing.JButton();
+        exit = new javax.swing.JButton();
+        signupPage = new javax.swing.JPanel();
+        pwSign = new javax.swing.JLabel();
+        noTelpSign = new javax.swing.JLabel();
+        emailSign = new javax.swing.JLabel();
+        userSign = new javax.swing.JLabel();
         txtUsername = new javax.swing.JTextField();
         txtEmail = new javax.swing.JTextField();
         txtNoTelp = new javax.swing.JTextField();
         txtPassSU = new javax.swing.JPasswordField();
         jLabel6 = new javax.swing.JLabel();
-        btSignUp = new javax.swing.JButton();
-        btHaveAccount = new javax.swing.JButton();
-        btGuest2 = new javax.swing.JButton();
+        daftarAkun = new javax.swing.JButton();
+        punyaAkun = new javax.swing.JButton();
+        pengunjungDaftar = new javax.swing.JButton();
+        loginPage = new javax.swing.JPanel();
+        pwLog = new javax.swing.JLabel();
+        emailLog = new javax.swing.JLabel();
+        txtEmailLog = new javax.swing.JTextField();
+        txtPassLog = new javax.swing.JPasswordField();
+        jLabel4 = new javax.swing.JLabel();
+        mainMasuk = new javax.swing.JButton();
+        kembaliMasuk = new javax.swing.JButton();
+        pengunjungMasuk = new javax.swing.JButton();
         homePage = new javax.swing.JPanel();
+        txtAkun = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        mulaiGame = new javax.swing.JButton();
         keluar = new javax.swing.JButton();
+        mulaiGame = new javax.swing.JButton();
+        score = new javax.swing.JButton();
+        akun = new javax.swing.JButton();
         gamePage = new javax.swing.JPanel();
         salah = new javax.swing.JLabel();
         benar = new javax.swing.JLabel();
@@ -80,8 +89,22 @@ public class game extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         jLabel2 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        backHomePage1 = new javax.swing.JButton();
+        scoreKembali = new javax.swing.JButton();
+        accountPage = new javax.swing.JPanel();
+        pwAcc = new javax.swing.JLabel();
+        noTelpAcc = new javax.swing.JLabel();
+        emailAcc = new javax.swing.JLabel();
+        userAcc = new javax.swing.JLabel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTable2 = new javax.swing.JTable();
+        akunUsername = new javax.swing.JTextField();
+        akunEmail = new javax.swing.JTextField();
+        akunNoTelp = new javax.swing.JTextField();
+        akunPassword = new javax.swing.JTextField();
+        jLabel7 = new javax.swing.JLabel();
+        akunUpdate = new javax.swing.JButton();
+        akunHapus = new javax.swing.JButton();
+        accountKembali = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -89,132 +112,239 @@ public class game extends javax.swing.JFrame {
         container.setPreferredSize(new java.awt.Dimension(550, 391));
         container.setLayout(new java.awt.CardLayout());
 
-        pnlDash.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        dashboardPage.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/PROJEK UAS ALPRO 2 REG Penyambut 2-01.png"))); // NOI18N
-        pnlDash.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        dashboardPage.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        btnSU.addActionListener(new java.awt.event.ActionListener() {
+        daftar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSUActionPerformed(evt);
+                daftarActionPerformed(evt);
             }
         });
-        pnlDash.add(btnSU, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 690, 180, 70));
+        dashboardPage.add(daftar, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 690, 180, 70));
 
-        btLogin.addActionListener(new java.awt.event.ActionListener() {
+        masuk.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btLoginActionPerformed(evt);
+                masukActionPerformed(evt);
             }
         });
-        pnlDash.add(btLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 690, 190, 70));
+        dashboardPage.add(masuk, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 690, 190, 70));
 
-        btExitProgram.addActionListener(new java.awt.event.ActionListener() {
+        exit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btExitProgramActionPerformed(evt);
+                exitActionPerformed(evt);
             }
         });
-        pnlDash.add(btExitProgram, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 790, 180, 80));
+        dashboardPage.add(exit, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 790, 180, 80));
 
-        container.add(pnlDash, "dash");
+        container.add(dashboardPage, "dashboardPage");
 
-        pnlLogin.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        signupPage.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        txtNameLog.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
-        txtNameLog.setBorder(null);
-        pnlLogin.add(txtNameLog, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 470, 520, 50));
+        pwSign.setFont(new java.awt.Font("Poppins", 1, 36)); // NOI18N
+        pwSign.setForeground(new java.awt.Color(121, 64, 2));
+        pwSign.setText("Password");
+        signupPage.add(pwSign, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 600, 190, 70));
 
-        txtPassLog.setFont(new java.awt.Font("Times New Roman", 1, 48)); // NOI18N
-        txtPassLog.setBorder(null);
-        pnlLogin.add(txtPassLog, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 570, 520, 60));
+        noTelpSign.setFont(new java.awt.Font("Poppins", 1, 36)); // NOI18N
+        noTelpSign.setForeground(new java.awt.Color(121, 64, 2));
+        noTelpSign.setText("Nomor Telepon");
+        signupPage.add(noTelpSign, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 500, 290, 70));
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/PROJEK UAS ALPRO 2 REG Login-01.png"))); // NOI18N
-        pnlLogin.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1520, 1080));
+        emailSign.setFont(new java.awt.Font("Poppins", 1, 36)); // NOI18N
+        emailSign.setForeground(new java.awt.Color(121, 64, 2));
+        emailSign.setText("Email");
+        signupPage.add(emailSign, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 400, 230, 70));
 
-        btStart.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btStartActionPerformed(evt);
-            }
-        });
-        pnlLogin.add(btStart, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 670, 180, 70));
+        userSign.setFont(new java.awt.Font("Poppins", 1, 36)); // NOI18N
+        userSign.setForeground(new java.awt.Color(121, 64, 2));
+        userSign.setText("Username");
+        signupPage.add(userSign, new org.netbeans.lib.awtextra.AbsoluteConstraints(863, 300, 210, 70));
 
-        btGuest1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btGuest1ActionPerformed(evt);
-            }
-        });
-        pnlLogin.add(btGuest1, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 770, 540, 70));
-
-        btBack.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btBackActionPerformed(evt);
-            }
-        });
-        pnlLogin.add(btBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 670, 170, 70));
-
-        container.add(pnlLogin, "login");
-
-        pnlSignUp.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        txtUsername.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
+        txtUsername.setFont(new java.awt.Font("Poppins", 1, 36)); // NOI18N
+        txtUsername.setForeground(new java.awt.Color(121, 64, 2));
         txtUsername.setBorder(null);
-        pnlSignUp.add(txtUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(864, 306, 550, 60));
+        txtUsername.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                txtUsernameFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                txtUsernameFocusLost(evt);
+            }
+        });
+        signupPage.add(txtUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(864, 306, 550, 60));
 
-        txtEmail.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
+        txtEmail.setFont(new java.awt.Font("Poppins", 1, 36)); // NOI18N
+        txtEmail.setForeground(new java.awt.Color(121, 64, 2));
         txtEmail.setBorder(null);
-        pnlSignUp.add(txtEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(864, 406, 550, 60));
+        txtEmail.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                txtEmailFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                txtEmailFocusLost(evt);
+            }
+        });
+        signupPage.add(txtEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(864, 406, 550, 60));
 
-        txtNoTelp.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
+        txtNoTelp.setFont(new java.awt.Font("Poppins", 1, 36)); // NOI18N
+        txtNoTelp.setForeground(new java.awt.Color(121, 64, 2));
         txtNoTelp.setBorder(null);
-        pnlSignUp.add(txtNoTelp, new org.netbeans.lib.awtextra.AbsoluteConstraints(864, 506, 550, 60));
+        txtNoTelp.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                txtNoTelpFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                txtNoTelpFocusLost(evt);
+            }
+        });
+        signupPage.add(txtNoTelp, new org.netbeans.lib.awtextra.AbsoluteConstraints(864, 506, 550, 60));
 
-        txtPassSU.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
+        txtPassSU.setFont(new java.awt.Font("Poppins", 1, 36)); // NOI18N
+        txtPassSU.setForeground(new java.awt.Color(121, 64, 2));
         txtPassSU.setBorder(null);
-        pnlSignUp.add(txtPassSU, new org.netbeans.lib.awtextra.AbsoluteConstraints(856, 610, 560, 50));
+        txtPassSU.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                txtPassSUFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                txtPassSUFocusLost(evt);
+            }
+        });
+        signupPage.add(txtPassSU, new org.netbeans.lib.awtextra.AbsoluteConstraints(866, 610, 550, 50));
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Daftar-01.png"))); // NOI18N
-        pnlSignUp.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 0, 1520, 1080));
+        signupPage.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 0, 1520, 1080));
 
-        btSignUp.addActionListener(new java.awt.event.ActionListener() {
+        daftarAkun.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btSignUpActionPerformed(evt);
+                daftarAkunActionPerformed(evt);
             }
         });
-        pnlSignUp.add(btSignUp, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, 700, 180, 70));
+        signupPage.add(daftarAkun, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, 700, 180, 70));
 
-        btHaveAccount.addActionListener(new java.awt.event.ActionListener() {
+        punyaAkun.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btHaveAccountActionPerformed(evt);
+                punyaAkunActionPerformed(evt);
             }
         });
-        pnlSignUp.add(btHaveAccount, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 789, 440, 40));
+        signupPage.add(punyaAkun, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 789, 440, 40));
 
-        btGuest2.addActionListener(new java.awt.event.ActionListener() {
+        pengunjungDaftar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btGuest2ActionPerformed(evt);
+                pengunjungDaftarActionPerformed(evt);
             }
         });
-        pnlSignUp.add(btGuest2, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 850, 570, 70));
+        signupPage.add(pengunjungDaftar, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 850, 570, 70));
 
-        container.add(pnlSignUp, "signup");
+        container.add(signupPage, "signupPage");
+
+        loginPage.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        pwLog.setFont(new java.awt.Font("Poppins", 1, 36)); // NOI18N
+        pwLog.setForeground(new java.awt.Color(121, 64, 2));
+        pwLog.setText("Password");
+        loginPage.add(pwLog, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 570, 190, 60));
+
+        emailLog.setFont(new java.awt.Font("Poppins", 1, 36)); // NOI18N
+        emailLog.setForeground(new java.awt.Color(121, 64, 2));
+        emailLog.setText("Email");
+        loginPage.add(emailLog, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 460, 110, 70));
+
+        txtEmailLog.setBackground(new java.awt.Color(243, 248, 251));
+        txtEmailLog.setFont(new java.awt.Font("Poppins", 1, 36)); // NOI18N
+        txtEmailLog.setForeground(new java.awt.Color(121, 64, 2));
+        txtEmailLog.setBorder(null);
+        txtEmailLog.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                txtEmailLogFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                txtEmailLogFocusLost(evt);
+            }
+        });
+        loginPage.add(txtEmailLog, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 470, 500, 50));
+
+        txtPassLog.setBackground(new java.awt.Color(243, 248, 251));
+        txtPassLog.setFont(new java.awt.Font("Poppins", 1, 36)); // NOI18N
+        txtPassLog.setForeground(new java.awt.Color(121, 64, 2));
+        txtPassLog.setBorder(null);
+        txtPassLog.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                txtPassLogFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                txtPassLogFocusLost(evt);
+            }
+        });
+        loginPage.add(txtPassLog, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 570, 500, 60));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/PROJEK UAS ALPRO 2 REG Login-01.png"))); // NOI18N
+        loginPage.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1520, 1080));
+
+        mainMasuk.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mainMasukActionPerformed(evt);
+            }
+        });
+        loginPage.add(mainMasuk, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 670, 180, 70));
+
+        kembaliMasuk.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                kembaliMasukActionPerformed(evt);
+            }
+        });
+        loginPage.add(kembaliMasuk, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 670, 170, 70));
+
+        pengunjungMasuk.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                pengunjungMasukActionPerformed(evt);
+            }
+        });
+        loginPage.add(pengunjungMasuk, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 770, 540, 70));
+
+        container.add(loginPage, "loginPage");
 
         homePage.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/PROJEK UAS ALPRO 2 REG Beranda-01.png"))); // NOI18N
-        homePage.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1520, 1090));
+        txtAkun.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        txtAkun.setForeground(new java.awt.Color(255, 255, 255));
+        txtAkun.setText("jLabel7");
+        homePage.add(txtAkun, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, -1, -1));
 
-        mulaiGame.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                mulaiGameActionPerformed(evt);
-            }
-        });
-        homePage.add(mulaiGame, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 620, 330, 230));
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/BERANDA GAME-01.png"))); // NOI18N
+        homePage.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1520, 1090));
 
         keluar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 keluarActionPerformed(evt);
             }
         });
-        homePage.add(keluar, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 890, 330, 90));
+        homePage.add(keluar, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 950, 330, 90));
+
+        mulaiGame.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mulaiGameActionPerformed(evt);
+            }
+        });
+        homePage.add(mulaiGame, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 550, 330, 230));
+
+        score.setText("jButton1");
+        score.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                scoreActionPerformed(evt);
+            }
+        });
+        homePage.add(score, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 830, 270, 90));
+
+        akun.setText("jButton1");
+        akun.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                akunActionPerformed(evt);
+            }
+        });
+        homePage.add(akun, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 830, 250, 90));
 
         container.add(homePage, "homePage");
 
@@ -230,18 +360,19 @@ public class game extends javax.swing.JFrame {
         skor.setText("0");
         gamePage.add(skor, new org.netbeans.lib.awtextra.AbsoluteConstraints(1300, 140, 130, 40));
 
-        kata.setFont(new java.awt.Font("Segoe UI Black", 1, 36)); // NOI18N
+        kata.setFont(new java.awt.Font("Poppins", 1, 36)); // NOI18N
         kata.setForeground(new java.awt.Color(121, 64, 2));
         kata.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         gamePage.add(kata, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 390, 330, 90));
 
-        timer_txt.setFont(new java.awt.Font("Segoe UI Black", 1, 120)); // NOI18N
+        timer_txt.setFont(new java.awt.Font("Poppins", 1, 120)); // NOI18N
         timer_txt.setForeground(new java.awt.Color(121, 64, 2));
         timer_txt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         gamePage.add(timer_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 700, 170, 130));
 
         ans.setBackground(new java.awt.Color(255, 242, 226));
-        ans.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        ans.setFont(new java.awt.Font("Poppins", 1, 30)); // NOI18N
+        ans.setForeground(new java.awt.Color(121, 64, 2));
         ans.setBorder(null);
         ans.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -261,7 +392,6 @@ public class game extends javax.swing.JFrame {
         repeat.setBorder(null);
         repeat.setBorderPainted(false);
         repeat.setFocusPainted(false);
-        repeat.setOpaque(false);
         repeat.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 repeatActionPerformed(evt);
@@ -298,36 +428,150 @@ public class game extends javax.swing.JFrame {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
-        jTable1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jTable1MouseClicked(evt);
-            }
-        });
         jScrollPane1.setViewportView(jTable1);
 
-        scorePage.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 330, 850, 470));
+        scorePage.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 310, 900, 490));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/TABEL SKOR (1).png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/PROJEK UAS ALPRO 2 REG.png Skor Game-01.png"))); // NOI18N
         scorePage.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1520, 1090));
 
-        jButton1.setBackground(new java.awt.Color(121, 64, 2));
-        jButton1.setFont(new java.awt.Font("Tahoma", 0, 48)); // NOI18N
-        jButton1.setText("Hapus");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        scoreKembali.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                scoreKembaliActionPerformed(evt);
             }
         });
-        scorePage.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 870, 180, 60));
-
-        backHomePage1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                backHomePage1ActionPerformed(evt);
-            }
-        });
-        scorePage.add(backHomePage1, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 870, 180, 70));
+        scorePage.add(scoreKembali, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 890, 180, 60));
 
         container.add(scorePage, "scorePage");
+
+        accountPage.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        pwAcc.setFont(new java.awt.Font("Poppins", 1, 36)); // NOI18N
+        pwAcc.setForeground(new java.awt.Color(121, 64, 2));
+        pwAcc.setText("Password");
+        accountPage.add(pwAcc, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 750, 290, 60));
+
+        noTelpAcc.setFont(new java.awt.Font("Poppins", 1, 36)); // NOI18N
+        noTelpAcc.setForeground(new java.awt.Color(121, 64, 2));
+        noTelpAcc.setText("Nomor Telepon");
+        accountPage.add(noTelpAcc, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 600, 290, 60));
+
+        emailAcc.setFont(new java.awt.Font("Poppins", 1, 36)); // NOI18N
+        emailAcc.setForeground(new java.awt.Color(121, 64, 2));
+        emailAcc.setText("Email");
+        accountPage.add(emailAcc, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 460, 110, 50));
+
+        userAcc.setFont(new java.awt.Font("Poppins", 1, 36)); // NOI18N
+        userAcc.setForeground(new java.awt.Color(121, 64, 2));
+        userAcc.setText("Username");
+        accountPage.add(userAcc, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 310, 210, 50));
+
+        jTable2.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
+        jTable2.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jTable2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTable2MouseClicked(evt);
+            }
+        });
+        jScrollPane2.setViewportView(jTable2);
+
+        accountPage.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 280, 540, 610));
+
+        akunUsername.setBackground(new java.awt.Color(242, 186, 118));
+        akunUsername.setFont(new java.awt.Font("Poppins", 1, 36)); // NOI18N
+        akunUsername.setForeground(new java.awt.Color(121, 64, 2));
+        akunUsername.setBorder(null);
+        akunUsername.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                akunUsernameFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                akunUsernameFocusLost(evt);
+            }
+        });
+        accountPage.add(akunUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 300, 600, 70));
+
+        akunEmail.setBackground(new java.awt.Color(242, 186, 118));
+        akunEmail.setFont(new java.awt.Font("Poppins", 1, 36)); // NOI18N
+        akunEmail.setForeground(new java.awt.Color(121, 64, 2));
+        akunEmail.setBorder(null);
+        akunEmail.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                akunEmailFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                akunEmailFocusLost(evt);
+            }
+        });
+        accountPage.add(akunEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 460, 600, 50));
+
+        akunNoTelp.setBackground(new java.awt.Color(242, 186, 118));
+        akunNoTelp.setFont(new java.awt.Font("Poppins", 1, 36)); // NOI18N
+        akunNoTelp.setForeground(new java.awt.Color(121, 64, 2));
+        akunNoTelp.setBorder(null);
+        akunNoTelp.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                akunNoTelpFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                akunNoTelpFocusLost(evt);
+            }
+        });
+        accountPage.add(akunNoTelp, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 600, 600, 60));
+
+        akunPassword.setBackground(new java.awt.Color(242, 186, 118));
+        akunPassword.setFont(new java.awt.Font("Poppins", 1, 36)); // NOI18N
+        akunPassword.setForeground(new java.awt.Color(121, 64, 2));
+        akunPassword.setBorder(null);
+        akunPassword.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                akunPasswordFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                akunPasswordFocusLost(evt);
+            }
+        });
+        accountPage.add(akunPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 750, 600, 60));
+
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Setting Akun-01.png"))); // NOI18N
+        accountPage.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1520, 1090));
+
+        akunUpdate.setBackground(new java.awt.Color(121, 64, 2));
+        akunUpdate.setFont(new java.awt.Font("Tahoma", 0, 48)); // NOI18N
+        akunUpdate.setText("Hapus");
+        akunUpdate.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                akunUpdateActionPerformed(evt);
+            }
+        });
+        accountPage.add(akunUpdate, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 890, 200, 60));
+
+        akunHapus.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                akunHapusActionPerformed(evt);
+            }
+        });
+        accountPage.add(akunHapus, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 890, 180, 60));
+
+        accountKembali.setText("jButton1");
+        accountKembali.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                accountKembaliActionPerformed(evt);
+            }
+        });
+        accountPage.add(accountKembali, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 80, 100, 80));
+
+        container.add(accountPage, "accountPage");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -343,8 +587,12 @@ public class game extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    // Deklarasi variabel penting
     int scores = 0;
-    String emailUser, emailVal;
+    String emailUser, sql;
+    java.sql.Connection conn;
+    java.sql.PreparedStatement pst;
+    java.sql.ResultSet rs;
     
     private void submitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitActionPerformed
         benar.setVisible(false);
@@ -390,11 +638,10 @@ public class game extends javax.swing.JFrame {
     }//GEN-LAST:event_mulaiGameActionPerformed
 
     private void keluarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_keluarActionPerformed
-        JOptionPane.showMessageDialog(null, "Logout Anda Telah Berhasil,"
-            + " Mohon Login Ulang");
+        JOptionPane.showMessageDialog(null, "Logout Anda Telah Berhasil, Mohon Login Ulang");
         
         CardLayout cLayout = (CardLayout) container.getLayout();
-        cLayout.show(container, "dash");
+        cLayout.show(container, "dashboardPage");
     }//GEN-LAST:event_keluarActionPerformed
 
     
@@ -429,45 +676,24 @@ public class game extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_ansActionPerformed
 
-    private void backHomePage1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backHomePage1ActionPerformed
+    private void scoreKembaliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_scoreKembaliActionPerformed
         skor.setText("0");
         scores = 0;
         CardLayout cLayout = (CardLayout) container.getLayout();
         cLayout.show(container, "homePage");
-    }//GEN-LAST:event_backHomePage1ActionPerformed
+    }//GEN-LAST:event_scoreKembaliActionPerformed
 
-    private void jTable1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable1MouseClicked
-        // TODO add your handling code here:
-        int baris = jTable1.rowAtPoint(evt.getPoint());
-        
-        emailVal = jTable1.getValueAt(baris, 1).toString();
-    }//GEN-LAST:event_jTable1MouseClicked
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-        try {
-            String sql = "DELETE FROM admin WHERE email = '" + emailVal + "'";
-            java.sql.Connection conn = config.configDB();
-            java.sql.PreparedStatement pst = conn.prepareStatement(sql);
-            pst.executeUpdate();
-        } catch (Exception e) {
-            
-        }
-        
-        score_table();
-    }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void btnSUActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSUActionPerformed
+    private void daftarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_daftarActionPerformed
         CardLayout cLayout = (CardLayout) container.getLayout();
-        cLayout.show(container, "signup");
-    }//GEN-LAST:event_btnSUActionPerformed
+        cLayout.show(container, "signupPage");
+    }//GEN-LAST:event_daftarActionPerformed
 
-    private void btLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btLoginActionPerformed
+    private void masukActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_masukActionPerformed
         CardLayout cLayout = (CardLayout) container.getLayout();
-        cLayout.show(container, "login");
-    }//GEN-LAST:event_btLoginActionPerformed
+        cLayout.show(container, "loginPage");
+    }//GEN-LAST:event_masukActionPerformed
 
-    private void btExitProgramActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btExitProgramActionPerformed
+    private void exitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitActionPerformed
         int response = JOptionPane.showConfirmDialog(null,"Do you want to leave"
             + " application ?","Confirmation",
             JOptionPane.YES_OPTION,JOptionPane.QUESTION_MESSAGE);
@@ -475,122 +701,380 @@ public class game extends javax.swing.JFrame {
             case JOptionPane.YES_OPTION:
             System.exit(0);
         }
-    }//GEN-LAST:event_btExitProgramActionPerformed
+    }//GEN-LAST:event_exitActionPerformed
 
-    private void btStartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btStartActionPerformed
-        try{
-            String sql = "SELECT * FROM admin WHERE password ='" + txtPassLog.getText()
-                    + "' OR username ='" + txtNameLog.getText() + "' OR"
-                    + " email ='" + txtNameLog.getText() + "'";
-            java.sql.Connection conn = (java.sql.Connection)config.configDB();
-            java.sql.PreparedStatement pst = conn.prepareStatement(sql);
-            
-            java.sql.ResultSet rs = pst.executeQuery(sql);
-            
-            if (rs.next()) {
-                String tes = "";
-                if ( ( txtNameLog.getText().equals(rs.getString("username")) ||
-                    txtNameLog.getText().equals(rs.getString("email")) ) &&
-                txtPassLog.getText().equals (rs.getString ("password"))){
+    private void mainMasukActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mainMasukActionPerformed
+        
+        String email = txtEmailLog.getText();
+        String pw = txtPassLog.getText();
+        
+        if(email.isEmpty() || pw.isEmpty()) {
+            JOptionPane.showMessageDialog(null, "Masukkan Email dan Password Terlebih Dahulu");
 
-                JOptionPane.showMessageDialog(null, "Login Anda Telah Berhasil,"
-                    + " Selamat Bermain :)");
-
-                emailUser = txtNameLog.getText();
-
-                CardLayout cLayout = (CardLayout) container.getLayout();
-                cLayout.show(container, "homePage");
-
-                txtNameLog.setText("");
-                txtPassLog.setText("");
-            } else{
-                JOptionPane.showMessageDialog(null, "maaf, kombinasi username "
-                    + "dan password salah");
-            }
         } else {
-            if (txtNameLog.getText() == ""){
-                JOptionPane.showMessageDialog(null, "Mohon isi field username");
-            } else if (txtPassLog.getText() == ""){
-                JOptionPane.showMessageDialog(null, "Mohon isi field password");
-            } else if (txtPassLog.getText() == "" && txtNameLog.getText() == ""){
-                JOptionPane.showMessageDialog(null, "Mohon isi field username & password");
-            } else{
-                JOptionPane.showMessageDialog(null, "rs.next() tidak tersambung");
-            }
-        }
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, e.getMessage());
-        }
-    }//GEN-LAST:event_btStartActionPerformed
-
-    private void btGuest1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btGuest1ActionPerformed
-        JOptionPane.showMessageDialog(null, "Login Anda Telah Berhasil, "
-            + "Selemat Bermain !!!");
-
-        game secondGUI = new game();
-        secondGUI.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_btGuest1ActionPerformed
-
-    private void btBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btBackActionPerformed
-        CardLayout cLayout = (CardLayout) container.getLayout();
-        cLayout.show(container, "dash");
-    }//GEN-LAST:event_btBackActionPerformed
-
-    private void btSignUpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btSignUpActionPerformed
-        try {
-            // Koneksi ke database
-            String sql = "SELECT COUNT(*) FROM admin WHERE email = ?";
-            java.sql.Connection conn = (java.sql.Connection)config.configDB();
-            java.sql.PreparedStatement pst = conn.prepareStatement(sql);
-            pst.setString(1, txtEmail.getText());
-
-            java.sql.ResultSet rs = pst.executeQuery();
-
-            // Jika email sudah ada, tampilkan pesan kesalahan
-            if (rs.next() && rs.getInt(1) > 0) {
-                JOptionPane.showMessageDialog(null, "Email sudah terdaftar. Silakan gunakan email lain.");
-                txtUsername.setText("");
-                txtEmail.setText("");
-                txtNoTelp.setText("");
-                txtPassSU.setText("");
-            } else {
-                // Jika email tidak ada, lanjutkan proses pendaftaran
-                sql = "INSERT INTO admin (username, password, no_telp, email) VALUES (?, ?, ?, ?)";
+            try{
+                //Koneksi database
+                sql = "SELECT * FROM admin WHERE acc_email = ?";
+                conn = (java.sql.Connection)config.configDB();
                 pst = conn.prepareStatement(sql);
-                pst.setString(1, txtUsername.getText());
-                pst.setString(2, txtPassSU.getText());
-                pst.setString(3, txtNoTelp.getText());
-                pst.setString(4, txtEmail.getText());
-                pst.executeUpdate();
+                pst.setString(1, email);
+                rs = pst.executeQuery();    
 
-                JOptionPane.showMessageDialog(null, "Penambahan Data Peserta Berhasil");
+                //Cek baris
+                if (rs.next()) {
+                    //Email ditemukan
+                    if (email.equals(rs.getString("acc_email")) && pw.equals(rs.getString ("acc_password"))){
+                        JOptionPane.showMessageDialog(null, "Anda Berhasil Masuk, Selamat Bermain :)");
 
-                // Mengosongkan field input
-                txtEmail.setText("");
-                txtNoTelp.setText("");
-                txtUsername.setText("");
-                txtPassSU.setText("");
+                        txtAkun.setText(email);
+                        CardLayout cLayout = (CardLayout) container.getLayout();
+                        cLayout.show(container, "homePage"); 
+
+                        txtEmailLog.setText("");
+                        txtPassLog.setText("");
+                    } else{
+                        JOptionPane.showMessageDialog(null, "Maaf, Username atau Password Anda Salah");
+                    }
+                    
+                } else {
+                    //Email tidak ditemukan
+                    JOptionPane.showMessageDialog(null, "Akun Tidak Terdaftar");
+                }
+                
+            } catch (Exception e) {
+                JOptionPane.showMessageDialog(null, e.getMessage());
             }
-
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, e.getMessage());
+            
         }
-    }//GEN-LAST:event_btSignUpActionPerformed
+    }//GEN-LAST:event_mainMasukActionPerformed
 
-    private void btHaveAccountActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btHaveAccountActionPerformed
+    private void pengunjungMasukActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pengunjungMasukActionPerformed
+        txtEmailLog.setText("");
+        txtPassLog.setText("");
+        
+        JOptionPane.showMessageDialog(null, "Anda Masuk Sebagai Pengunjung, Selemat Bermain !!!");
+        
         CardLayout cLayout = (CardLayout) container.getLayout();
-        cLayout.show(container, "login");
-    }//GEN-LAST:event_btHaveAccountActionPerformed
+        cLayout.show(container, "homePage");
+        
+    }//GEN-LAST:event_pengunjungMasukActionPerformed
 
-    private void btGuest2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btGuest2ActionPerformed
-        JOptionPane.showMessageDialog(null, "Login Anda Telah Berhasil, "
-            + "Selemat Bermain !!!");
+    private void kembaliMasukActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kembaliMasukActionPerformed
+        txtEmailLog.setText("");
+        txtPassLog.setText("");
+        CardLayout cLayout = (CardLayout) container.getLayout();
+        cLayout.show(container, "dashboardPage");
+    }//GEN-LAST:event_kembaliMasukActionPerformed
 
-        game secondGUI = new game();
-        secondGUI.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_btGuest2ActionPerformed
+    private void daftarAkunActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_daftarAkunActionPerformed
+        //Deklarasi variabel penting
+        String username = txtUsername.getText();
+        String email = txtEmail.getText();
+        String notelp = txtNoTelp.getText();
+        String pw = txtPassSU.getText();
+        
+        //Cek textfield
+        if (username.isEmpty()) {
+            JOptionPane.showMessageDialog(null, "Masukkan username dengan benar");
+        
+        }else if (!email.contains("@gmail.com") && !email.contains("@mhs.stiki.ac.id") && !email.contains("@stiki.ac.id")) {
+            JOptionPane.showMessageDialog(null, "Masukkan email dengan benar");
+        
+        } else if(notelp.isEmpty() || notelp.length() < 12 || !notelp.startsWith("08")) {
+            JOptionPane.showMessageDialog(null, "Masukkan nomor telepon dengan benar");
+        
+        } else if (pw.isEmpty()){
+            JOptionPane.showMessageDialog(null, "Masukkan password dengan benar");
+        
+        } else {
+            try {
+                // Koneksi ke database
+                sql = "SELECT COUNT(*) FROM admin WHERE acc_email = ?";
+                conn = (java.sql.Connection)config.configDB();
+                pst = conn.prepareStatement(sql);
+                pst.setString(1, email);
+                rs = pst.executeQuery();
+
+                // Jika email sudah ada, tampilkan pesan kesalahan
+                if (rs.next() && rs.getInt(1) > 0) {
+                    JOptionPane.showMessageDialog(null, "Email sudah terdaftar. Silakan gunakan email lain.");
+
+                } else {
+                    // Jika email tidak ada, lanjutkan proses pendaftaran
+                    sql = "INSERT INTO admin (acc_username, acc_password, acc_no_telp, acc_email) VALUES (?, ?, ?, ?)";
+                    pst = conn.prepareStatement(sql);
+                    pst.setString(1, username);
+                    pst.setString(2, pw);
+                    pst.setString(3, notelp);
+                    pst.setString(4, email);
+                    pst.executeUpdate();
+
+                    JOptionPane.showMessageDialog(null, "Penambahan Data Peserta Berhasil");
+
+                    // Mengosongkan field input
+                    txtEmail.setText("");
+                    txtNoTelp.setText("");
+                    txtUsername.setText("");
+                    txtPassSU.setText("");
+                    
+                    CardLayout cLayout = (CardLayout) container.getLayout();
+                    cLayout.show(container, "loginPage");
+                }
+
+            } catch (Exception e) {
+                JOptionPane.showMessageDialog(null, e.getMessage());
+                
+            }
+            
+        }
+
+    }//GEN-LAST:event_daftarAkunActionPerformed
+
+    private void punyaAkunActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_punyaAkunActionPerformed
+        txtUsername.setText("");
+        txtEmail.setText("");
+        txtNoTelp.setText("");
+        txtPassSU.setText("");
+                    
+        CardLayout cLayout = (CardLayout) container.getLayout();
+        cLayout.show(container, "loginPage");
+    }//GEN-LAST:event_punyaAkunActionPerformed
+
+    private void pengunjungDaftarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pengunjungDaftarActionPerformed
+        JOptionPane.showMessageDialog(null, "Anda Masuk Sebagai Pengunjung, Selemat Bermain !!!");
+
+        txtUsername.setText("");
+        txtEmail.setText("");
+        txtNoTelp.setText("");
+        txtPassSU.setText("");
+        
+        txtUsername .setText("");
+        txtEmail.setText("");
+        txtNoTelp.setText("");
+        txtPassSU.setText("");
+        
+        CardLayout cLayout = (CardLayout) container.getLayout();
+        cLayout.show(container, "homePage");
+    }//GEN-LAST:event_pengunjungDaftarActionPerformed
+
+    private void scoreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_scoreActionPerformed
+        // TODO add your handling code here:
+        CardLayout cLayout = (CardLayout) container.getLayout();
+        cLayout.show(container, "scorePage");
+    }//GEN-LAST:event_scoreActionPerformed
+
+    private void akunActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_akunActionPerformed
+        // TODO add your handling code here:
+        load_account();
+        CardLayout cLayout = (CardLayout) container.getLayout();
+        cLayout.show(container, "accountPage");
+    }//GEN-LAST:event_akunActionPerformed
+
+    private void jTable2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable2MouseClicked
+        // TODO add your handling code here:
+        int baris = jTable2.rowAtPoint(evt.getPoint());
+        String emailVal = jTable2.getValueAt(baris, 1).toString();
+        akunEmail.setText(emailVal);
+        
+        String usernameVal = jTable2.getValueAt(baris, 2).toString();
+        akunUsername.setText(usernameVal);
+        
+        String noTelpVal = jTable2.getValueAt(baris, 3).toString();
+        akunNoTelp.setText(noTelpVal);
+        
+        String pwVal = jTable2.getValueAt(baris, 4).toString();
+        akunPassword.setText(pwVal);
+    }//GEN-LAST:event_jTable2MouseClicked
+
+    private void akunHapusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_akunHapusActionPerformed
+        // TODO add your handling code here:
+        String email = akunEmail.getText();
+        try {
+            sql = "DELETE FROM admin WHERE acc_email = ?";
+            conn = config.configDB();
+            pst = conn.prepareStatement(sql);
+            pst.setString(1, email);
+            pst.executeUpdate();
+            
+            // Membuat statement
+            java.sql.Statement stmt = conn.createStatement();
+
+            // 1. Membuat tabel sementara untuk menyimpan data
+            String createTempTable = "CREATE TABLE temp_admin AS SELECT * FROM admin";
+            stmt.executeUpdate(createTempTable);
+
+            // 2. Menghapus semua data dari tabel asli
+            String deleteData = "DELETE FROM admin";
+            stmt.executeUpdate(deleteData);
+
+            // 3. Mengatur ulang auto-increment pada kolom acc_id (misal ke 1)
+            String resetAutoIncrement = "ALTER TABLE admin AUTO_INCREMENT = 1";
+            stmt.executeUpdate(resetAutoIncrement);
+
+            // 4. Menyalin kembali data dari tabel sementara ke tabel asli
+            String copyDataBack = "INSERT INTO admin (acc_email, acc_username, acc_no_telp, acc_password) SELECT acc_email, acc_username, acc_no_telp, acc_password FROM temp_admin";
+            stmt.executeUpdate(copyDataBack);
+
+            // 5. Menghapus tabel sementara
+            String dropTempTable = "DROP TABLE temp_players";
+            stmt.executeUpdate(dropTempTable);
+            
+        } catch (Exception e) {
+            
+        }
+        
+        load_account();
+    }//GEN-LAST:event_akunHapusActionPerformed
+
+    private void akunUpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_akunUpdateActionPerformed
+        // TODO add your handling code here:
+        String email = akunEmail.getText();
+        String username = akunUsername.getText();
+        String notelp = akunNoTelp.getText();
+        String pw = akunPassword.getText();
+        try {
+            sql = "UPDATE admin SET  WHERE acc_email = ?,  acc_username = ?, acc_no_telp = ?, acc_password = ? WHERE acc_email = ?'";
+            conn = config.configDB();
+            pst = conn.prepareStatement(sql);
+            
+            pst.setString(1, email);
+            pst.setString(2, username);
+            pst.setString(3, notelp);
+            pst.setString(4, pw);
+            pst.setString(5, email);
+            pst.executeUpdate();
+            
+        } catch (Exception e) {}
+        
+        load_account();
+    }//GEN-LAST:event_akunUpdateActionPerformed
+
+    private void accountKembaliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_accountKembaliActionPerformed
+        // TODO add your handling code here:
+        CardLayout cLayout = (CardLayout) container.getLayout();
+        cLayout.show(container, "homePage");
+    }//GEN-LAST:event_accountKembaliActionPerformed
+
+    private void txtUsernameFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtUsernameFocusGained
+        // TODO add your handling code here:
+            userSign.setVisible(false);
+    }//GEN-LAST:event_txtUsernameFocusGained
+
+    private void txtUsernameFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtUsernameFocusLost
+        // TODO add your handling code here:
+        if (txtUsername.getText().isEmpty()) {
+            userSign.setVisible(true);
+        }
+    }//GEN-LAST:event_txtUsernameFocusLost
+
+    private void txtEmailFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtEmailFocusLost
+        // TODO add your handling code here:\
+        if (txtEmail.getText().isEmpty()) {
+            emailSign.setVisible(true);
+        }
+    }//GEN-LAST:event_txtEmailFocusLost
+
+    private void txtEmailFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtEmailFocusGained
+        // TODO add your handling code here:
+        emailSign.setVisible(false);
+
+    }//GEN-LAST:event_txtEmailFocusGained
+
+    private void txtNoTelpFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtNoTelpFocusGained
+        // TODO add your handling code here:
+        noTelpSign.setVisible(false);
+    }//GEN-LAST:event_txtNoTelpFocusGained
+
+    private void txtNoTelpFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtNoTelpFocusLost
+        // TODO add your handling code here:
+        if (txtNoTelp.getText().isEmpty()) {
+            noTelpSign.setVisible(true);
+        }
+    }//GEN-LAST:event_txtNoTelpFocusLost
+
+    private void txtPassSUFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtPassSUFocusGained
+        // TODO add your handling code here:
+        pwSign.setVisible(false);
+    }//GEN-LAST:event_txtPassSUFocusGained
+
+    private void txtPassSUFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtPassSUFocusLost
+        // TODO add your handling code here:
+        if (txtPassSU.getText().isEmpty()) {
+            pwSign.setVisible(true);
+        }
+    }//GEN-LAST:event_txtPassSUFocusLost
+
+    private void txtEmailLogFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtEmailLogFocusGained
+        // TODO add your handling code here:
+        emailLog.setVisible(false);
+    }//GEN-LAST:event_txtEmailLogFocusGained
+
+    private void txtEmailLogFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtEmailLogFocusLost
+        // TODO add your handling code here:
+        if (txtEmailLog.getText().isEmpty()) {
+            emailLog.setVisible(true);
+        }
+    }//GEN-LAST:event_txtEmailLogFocusLost
+
+    private void txtPassLogFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtPassLogFocusGained
+        // TODO add your handling code here:
+        pwLog.setVisible(false);
+    }//GEN-LAST:event_txtPassLogFocusGained
+
+    private void txtPassLogFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtPassLogFocusLost
+        // TODO add your handling code here:
+        if (txtPassLog.getText().isEmpty()) {
+            pwLog.setVisible(true);
+        }
+    }//GEN-LAST:event_txtPassLogFocusLost
+
+    private void akunUsernameFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_akunUsernameFocusGained
+        // TODO add your handling code here:
+        userAcc.setVisible(false);
+    }//GEN-LAST:event_akunUsernameFocusGained
+
+    private void akunUsernameFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_akunUsernameFocusLost
+        // TODO add your handling code here:
+        if (akunUsername.getText().isEmpty()) {
+            userAcc.setVisible(true);
+        }
+    }//GEN-LAST:event_akunUsernameFocusLost
+
+    private void akunEmailFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_akunEmailFocusGained
+        // TODO add your handling code here:
+        emailAcc.setVisible(false);
+    }//GEN-LAST:event_akunEmailFocusGained
+
+    private void akunEmailFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_akunEmailFocusLost
+        // TODO add your handling code here:
+        if (akunEmail.getText().isEmpty()) {
+            emailAcc.setVisible(true);
+        }
+    }//GEN-LAST:event_akunEmailFocusLost
+
+    private void akunNoTelpFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_akunNoTelpFocusGained
+        // TODO add your handling code here:
+        noTelpAcc.setVisible(false);
+    }//GEN-LAST:event_akunNoTelpFocusGained
+
+    private void akunNoTelpFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_akunNoTelpFocusLost
+        // TODO add your handling code here:
+        if (akunNoTelp.getText().isEmpty()) {
+            noTelpAcc.setVisible(true);
+        }
+    }//GEN-LAST:event_akunNoTelpFocusLost
+
+    private void akunPasswordFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_akunPasswordFocusGained
+        // TODO add your handling code here:
+        pwAcc.setVisible(false);
+    }//GEN-LAST:event_akunPasswordFocusGained
+
+    private void akunPasswordFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_akunPasswordFocusLost
+        // TODO add your handling code here:
+        if (akunPassword.getText().isEmpty()) {
+            pwAcc.setVisible(true);
+        }
+    }//GEN-LAST:event_akunPasswordFocusLost
 
     /**
      * @param args the command line arguments
@@ -606,15 +1090,16 @@ public class game extends javax.swing.JFrame {
     }
     
     private Timer timer;
-    
     int countdownSeconds =  20;
-
     private void waktu() {
         
+        //Cek apakah timer sudah pernah berjalan atau belum
         if(timer != null) {
+            //Jika sudah, matikan
             timer.cancel();
         }
         
+        //Lalu nyalakan
         timer = new Timer();
         int delay = 0;
         int period = 1000;
@@ -627,40 +1112,63 @@ public class game extends javax.swing.JFrame {
             public void run() {
                 timer_txt.setText(Integer.toString(secondsRemaining));
                 secondsRemaining--;
+                
+                //Ketika waktu habis, maka...
                 if (secondsRemaining == -1){
                     timer.cancel(); // Stop the timer
                     ans.setText("");
                     kata.setText("");
                     timer_txt.setText(countdownSeconds + "");
+                    int skorLamaInt = 0;
                     
-                    try {
-                        // Query untuk update skor
-                        String sql = "UPDATE admin SET scores = ? WHERE email = ?";
-
+                    try{
+                        String skorLama = "SELECT player_score FROM players WHERE player_email = ?";
+                        
                         // Koneksi ke database
-                        java.sql.Connection conn = config.configDB();
-                        java.sql.PreparedStatement pst = conn.prepareStatement(sql);
+                        conn = config.configDB();
+                        pst = conn.prepareStatement(skorLama);
 
                         // Mengatur nilai parameter dalam PreparedStatement
-                        pst.setString(1, skor.getText());
-                        pst.setString(2, emailUser);
-
-                        // Menjalankan update query
-                        int affectedRows = pst.executeUpdate();
-
-                        // Jika diperlukan, cek apakah ada baris yang terupdate
-                        if (affectedRows > 0) {
-                            System.out.println("Update berhasil");
-                        } else {
-                            System.out.println("Email tidak ditemukan");
+                        pst.setString(1, txtAkun.getText());
+                        rs = pst.executeQuery();
+                        
+                        if(rs.next()){
+                            String skorLamaStr = rs.getString("player_score");
+                            skorLamaInt = Integer.parseInt(skorLamaStr);
                         }
-
-                        // Menutup PreparedStatement dan Connection
-                        pst.close();
-                        conn.close();
-
-                    } catch (Exception e) {
+                        
+                    } catch (Exception e){
                         e.printStackTrace();
+                    }
+                    
+                    int skorSekarangInt = Integer.parseInt(skor.getText());
+                    
+                    if(skorSekarangInt > skorLamaInt) {
+                        try {
+                            // Query untuk update skor  
+                            sql = "UPDATE players SET player_score = ? WHERE player_email = ?";
+
+                            // Koneksi ke database
+                            conn = config.configDB();
+                            pst = conn.prepareStatement(sql);
+
+                            // Mengatur nilai parameter dalam PreparedStatement
+                            pst.setString(1, skor.getText());
+                            pst.setString(2, txtAkun.getText());
+
+                            // Menjalankan update query
+                            int affectedRows = pst.executeUpdate();
+
+                            // Jika diperlukan, cek apakah ada baris yang terupdate
+                            if (affectedRows > 0) {
+                                System.out.println("Update berhasil");
+                            } else {
+                                System.out.println("Email tidak ditemukan");
+                            }
+
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
                     }
 
                     score_table();
@@ -678,7 +1186,7 @@ public class game extends javax.swing.JFrame {
     }
 
     
-    private static String loadDatabase(char c) {
+    private static String load_database(char c) {
         String morse = "";
         try {
             String sql = "SELECT code FROM code WHERE simbol = '" + c + "'";
@@ -706,7 +1214,7 @@ public class game extends javax.swing.JFrame {
         StringBuilder morseCodeStr = new StringBuilder();
         for (int i = 0; i < kataTerpilih.length(); i++) {
             char lowercaseChar = Character.toLowerCase(kataTerpilih.charAt(i)); // Konversi ke huruf kecil
-            String morse = loadDatabase(lowercaseChar);
+            String morse = load_database(lowercaseChar);
             if (morse != null) {
                 morseCodeStr.append(morse).append(" ");
             }
@@ -724,24 +1232,57 @@ public class game extends javax.swing.JFrame {
         model.addColumn("Email");
         model.addColumn("Username");
         model.addColumn("Scores");
-
+        
         try {
             int n = 1;
             
-            String sql = "SELECT email, username, scores FROM admin";
-            java.sql.Connection conn = (java.sql.Connection)config.configDB();
-            java.sql.PreparedStatement pst = conn.prepareStatement(sql);
-            java.sql.ResultSet rs = pst.executeQuery(sql);
+            sql = "SELECT * FROM players";
+            conn = (java.sql.Connection)config.configDB();
+            pst = conn.prepareStatement(sql);
+            rs = pst.executeQuery(sql);
             
             while (rs.next()) {
                 model.addRow(new Object[]{
-                    n++,
-                    rs.getString("email"),
-                    rs.getString("username"),
-                    rs.getString("scores")
+                    rs.getString("player_id"),
+                    rs.getString("player_email"),
+                    rs.getString("player_username"),
+                    rs.getString("player_score")
                 });
             }
             jTable1.setModel(model);
+            
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, e.getMessage());
+        }
+    }
+        
+    private void load_account() {
+        DefaultTableModel model = new DefaultTableModel();
+        model.addColumn("No");
+        model.addColumn("Email");
+        model.addColumn("Username");
+        model.addColumn("Nomor Telepon");
+        model.addColumn("Password");
+        
+        try {
+            int n = 1;
+            
+            sql = "SELECT * FROM admin";
+            conn = (java.sql.Connection)config.configDB();
+            pst = conn.prepareStatement(sql);
+            rs = pst.executeQuery(sql);
+            
+            while (rs.next()) {
+                model.addRow(new Object[]{
+                    rs.getString("acc_id"),
+                    rs.getString("acc_email"),
+                    rs.getString("acc_username"),
+                    rs.getString("acc_no_telp"),
+                    rs.getString("acc_password")
+                });
+            }
+            jTable2.setModel(model);
+            
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, e.getMessage());
         }
@@ -783,47 +1324,70 @@ public class game extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton StartGame;
+    private javax.swing.JButton accountKembali;
+    private javax.swing.JPanel accountPage;
+    private javax.swing.JButton akun;
+    private javax.swing.JTextField akunEmail;
+    private javax.swing.JButton akunHapus;
+    private javax.swing.JTextField akunNoTelp;
+    private javax.swing.JTextField akunPassword;
+    private javax.swing.JButton akunUpdate;
+    private javax.swing.JTextField akunUsername;
     private javax.swing.JTextField ans;
-    private javax.swing.JButton backHomePage1;
     private javax.swing.JLabel benar;
-    private javax.swing.JButton btBack;
-    private javax.swing.JButton btExitProgram;
-    private javax.swing.JButton btGuest1;
-    private javax.swing.JButton btGuest2;
-    private javax.swing.JButton btHaveAccount;
-    private javax.swing.JButton btLogin;
-    private javax.swing.JButton btSignUp;
-    private javax.swing.JButton btStart;
-    private javax.swing.JButton btnSU;
     private javax.swing.JPanel container;
+    private javax.swing.JButton daftar;
+    private javax.swing.JButton daftarAkun;
+    private javax.swing.JPanel dashboardPage;
+    private javax.swing.JLabel emailAcc;
+    private javax.swing.JLabel emailLog;
+    private javax.swing.JLabel emailSign;
+    private javax.swing.JButton exit;
     private javax.swing.JPanel gamePage;
     private javax.swing.JPanel homePage;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTable jTable1;
+    private javax.swing.JTable jTable2;
     private javax.swing.JLabel kata;
     private javax.swing.JButton keluar;
+    private javax.swing.JButton kembaliMasuk;
+    private javax.swing.JPanel loginPage;
+    private javax.swing.JButton mainMasuk;
+    private javax.swing.JButton masuk;
     private javax.swing.JButton mulaiGame;
-    private javax.swing.JPanel pnlDash;
-    private javax.swing.JPanel pnlLogin;
-    private javax.swing.JPanel pnlSignUp;
+    private javax.swing.JLabel noTelpAcc;
+    private javax.swing.JLabel noTelpSign;
+    private javax.swing.JButton pengunjungDaftar;
+    private javax.swing.JButton pengunjungMasuk;
+    private javax.swing.JButton punyaAkun;
+    private javax.swing.JLabel pwAcc;
+    private javax.swing.JLabel pwLog;
+    private javax.swing.JLabel pwSign;
     private javax.swing.JButton repeat;
     private javax.swing.JLabel salah;
+    private javax.swing.JButton score;
+    private javax.swing.JButton scoreKembali;
     private javax.swing.JPanel scorePage;
+    private javax.swing.JPanel signupPage;
     private javax.swing.JLabel skor;
     private javax.swing.JButton submit;
     private javax.swing.JLabel timer_txt;
+    private javax.swing.JLabel txtAkun;
     private javax.swing.JTextField txtEmail;
-    private javax.swing.JTextField txtNameLog;
+    private javax.swing.JTextField txtEmailLog;
     private javax.swing.JTextField txtNoTelp;
     private javax.swing.JPasswordField txtPassLog;
     private javax.swing.JPasswordField txtPassSU;
     private javax.swing.JTextField txtUsername;
+    private javax.swing.JLabel userAcc;
+    private javax.swing.JLabel userSign;
     // End of variables declaration//GEN-END:variables
 }

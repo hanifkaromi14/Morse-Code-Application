@@ -17,7 +17,7 @@ public class config {
             String url = "jdbc:mysql://localhost:3306/morsecode";
             String user = "root";
             String pass = "";
-            DriverManager.registerDriver(new com.mysql.jdbc.Driver());
+            DriverManager.registerDriver(new com.mysql.cj.jdbc.Driver());
             mysqlconfig = DriverManager.getConnection(url, user, pass);
         } catch(Exception e){
             System.err.println("Koneksi Gagal" + e.getMessage());

@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 10 Jul 2024 pada 10.43
--- Versi server: 10.4.32-MariaDB
--- Versi PHP: 8.2.12
+-- Generation Time: Jul 14, 2024 at 10:28 AM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,22 +24,28 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `admin`
+-- Table structure for table `admin`
 --
 
 CREATE TABLE `admin` (
-  `id` int(11) NOT NULL,
-  `username` varchar(50) DEFAULT NULL,
-  `password` varchar(10) DEFAULT NULL,
-  `no_telp` varchar(15) DEFAULT NULL,
-  `email` varchar(100) DEFAULT NULL,
-  `scores` int(11) DEFAULT NULL
+  `acc_id` int(11) NOT NULL,
+  `acc_email` varchar(100) NOT NULL,
+  `acc_username` varchar(50) NOT NULL,
+  `acc_no_telp` varchar(15) NOT NULL,
+  `acc_password` varchar(15) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `admin`
+--
+
+INSERT INTO `admin` (`acc_id`, `acc_email`, `acc_username`, `acc_no_telp`, `acc_password`) VALUES
+(1, '231111002@mhs.stiki.ac.id', '231111002', '082298280147', '231111002');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `code`
+-- Table structure for table `code`
 --
 
 CREATE TABLE `code` (
@@ -48,7 +54,7 @@ CREATE TABLE `code` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data untuk tabel `code`
+-- Dumping data for table `code`
 --
 
 INSERT INTO `code` (`simbol`, `code`) VALUES
@@ -89,25 +95,88 @@ INSERT INTO `code` (`simbol`, `code`) VALUES
 ('8', '---..'),
 ('9', '----.');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `players`
+--
+
+CREATE TABLE `players` (
+  `player_id` int(11) NOT NULL,
+  `player_email` varchar(100) NOT NULL,
+  `player_username` varchar(50) NOT NULL,
+  `player_score` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `temp_admin`
+--
+
+CREATE TABLE `temp_admin` (
+  `acc_id` int(11) NOT NULL DEFAULT 0,
+  `acc_email` varchar(100) NOT NULL,
+  `acc_username` varchar(50) NOT NULL,
+  `acc_no_telp` varchar(15) NOT NULL,
+  `acc_password` varchar(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `temp_admin`
+--
+
+INSERT INTO `temp_admin` (`acc_id`, `acc_email`, `acc_username`, `acc_no_telp`, `acc_password`) VALUES
+(10, '231111002@mhs.stiki.ac.id', '231111002', '082298280147', '231111002');
+
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indeks untuk tabel `admin`
+-- Indexes for table `admin`
 --
 ALTER TABLE `admin`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`acc_id`),
+  ADD UNIQUE KEY `acc_email` (`acc_email`),
+  ADD UNIQUE KEY `acc_username` (`acc_username`),
+  ADD UNIQUE KEY `acc_email_2` (`acc_email`),
+  ADD UNIQUE KEY `acc_username_2` (`acc_username`);
 
 --
--- AUTO_INCREMENT untuk tabel yang dibuang
+-- Indexes for table `players`
+--
+ALTER TABLE `players`
+  ADD PRIMARY KEY (`player_id`),
+  ADD KEY `fk_player_email` (`player_email`),
+  ADD KEY `fk_player_username` (`player_username`);
+
+--
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT untuk tabel `admin`
+-- AUTO_INCREMENT for table `admin`
 --
 ALTER TABLE `admin`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `acc_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `players`
+--
+ALTER TABLE `players`
+  MODIFY `player_id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `players`
+--
+ALTER TABLE `players`
+  ADD CONSTRAINT `fk_player_email` FOREIGN KEY (`player_email`) REFERENCES `admin` (`acc_email`),
+  ADD CONSTRAINT `fk_player_username` FOREIGN KEY (`player_username`) REFERENCES `admin` (`acc_username`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
