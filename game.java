@@ -142,28 +142,28 @@ public class game extends javax.swing.JFrame {
 
         signupPage.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        pwSign.setFont(new java.awt.Font("Poppins", 1, 36)); // NOI18N
-        pwSign.setForeground(new java.awt.Color(121, 64, 2));
-        pwSign.setText("Password");
-        signupPage.add(pwSign, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 600, 190, 70));
+        pwSign.setFont(new java.awt.Font("Poppins", 0, 36)); // NOI18N
+        pwSign.setForeground(new java.awt.Color(178, 178, 177));
+        pwSign.setText("Masukkan Password Kamu");
+        signupPage.add(pwSign, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 600, 540, 70));
 
-        noTelpSign.setFont(new java.awt.Font("Poppins", 1, 36)); // NOI18N
-        noTelpSign.setForeground(new java.awt.Color(121, 64, 2));
-        noTelpSign.setText("Nomor Telepon");
-        signupPage.add(noTelpSign, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 500, 290, 70));
+        noTelpSign.setFont(new java.awt.Font("Poppins", 0, 34)); // NOI18N
+        noTelpSign.setForeground(new java.awt.Color(178, 178, 177));
+        noTelpSign.setText("Masukkan Nomor Telepon Kamu");
+        signupPage.add(noTelpSign, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 500, 620, 70));
 
-        emailSign.setFont(new java.awt.Font("Poppins", 1, 36)); // NOI18N
-        emailSign.setForeground(new java.awt.Color(121, 64, 2));
-        emailSign.setText("Email");
-        signupPage.add(emailSign, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 400, 230, 70));
+        emailSign.setFont(new java.awt.Font("Poppins", 0, 34)); // NOI18N
+        emailSign.setForeground(new java.awt.Color(178, 178, 177));
+        emailSign.setText("Masukkan Email Kamu");
+        signupPage.add(emailSign, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 400, 550, 70));
 
-        userSign.setFont(new java.awt.Font("Poppins", 1, 36)); // NOI18N
-        userSign.setForeground(new java.awt.Color(121, 64, 2));
-        userSign.setText("Username");
-        signupPage.add(userSign, new org.netbeans.lib.awtextra.AbsoluteConstraints(863, 300, 210, 70));
+        userSign.setFont(new java.awt.Font("Poppins", 0, 34)); // NOI18N
+        userSign.setForeground(new java.awt.Color(178, 178, 177));
+        userSign.setText("Masukkan Username Kamu");
+        signupPage.add(userSign, new org.netbeans.lib.awtextra.AbsoluteConstraints(863, 300, 550, 70));
 
-        txtUsername.setFont(new java.awt.Font("Poppins", 1, 36)); // NOI18N
-        txtUsername.setForeground(new java.awt.Color(121, 64, 2));
+        txtUsername.setFont(new java.awt.Font("Poppins", 0, 34)); // NOI18N
+        txtUsername.setForeground(new java.awt.Color(51, 51, 51));
         txtUsername.setBorder(null);
         txtUsername.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
@@ -175,8 +175,8 @@ public class game extends javax.swing.JFrame {
         });
         signupPage.add(txtUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(864, 306, 550, 60));
 
-        txtEmail.setFont(new java.awt.Font("Poppins", 1, 36)); // NOI18N
-        txtEmail.setForeground(new java.awt.Color(121, 64, 2));
+        txtEmail.setFont(new java.awt.Font("Poppins", 0, 34)); // NOI18N
+        txtEmail.setForeground(new java.awt.Color(51, 51, 51));
         txtEmail.setBorder(null);
         txtEmail.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
@@ -188,8 +188,8 @@ public class game extends javax.swing.JFrame {
         });
         signupPage.add(txtEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(864, 406, 550, 60));
 
-        txtNoTelp.setFont(new java.awt.Font("Poppins", 1, 36)); // NOI18N
-        txtNoTelp.setForeground(new java.awt.Color(121, 64, 2));
+        txtNoTelp.setFont(new java.awt.Font("Poppins", 0, 34)); // NOI18N
+        txtNoTelp.setForeground(new java.awt.Color(51, 51, 51));
         txtNoTelp.setBorder(null);
         txtNoTelp.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
@@ -201,8 +201,8 @@ public class game extends javax.swing.JFrame {
         });
         signupPage.add(txtNoTelp, new org.netbeans.lib.awtextra.AbsoluteConstraints(864, 506, 550, 60));
 
-        txtPassSU.setFont(new java.awt.Font("Poppins", 1, 36)); // NOI18N
-        txtPassSU.setForeground(new java.awt.Color(121, 64, 2));
+        txtPassSU.setFont(new java.awt.Font("Poppins", 0, 34)); // NOI18N
+        txtPassSU.setForeground(new java.awt.Color(51, 51, 51));
         txtPassSU.setBorder(null);
         txtPassSU.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
@@ -242,19 +242,19 @@ public class game extends javax.swing.JFrame {
 
         loginPage.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        pwLog.setFont(new java.awt.Font("Poppins", 1, 36)); // NOI18N
-        pwLog.setForeground(new java.awt.Color(121, 64, 2));
-        pwLog.setText("Password");
-        loginPage.add(pwLog, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 570, 190, 60));
+        pwLog.setFont(new java.awt.Font("Poppins", 0, 34)); // NOI18N
+        pwLog.setForeground(new java.awt.Color(178, 178, 177));
+        pwLog.setText("Masukkan Password Kamu");
+        loginPage.add(pwLog, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 570, 510, 60));
 
-        emailLog.setFont(new java.awt.Font("Poppins", 1, 36)); // NOI18N
-        emailLog.setForeground(new java.awt.Color(121, 64, 2));
-        emailLog.setText("Email");
-        loginPage.add(emailLog, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 460, 110, 70));
+        emailLog.setFont(new java.awt.Font("Poppins", 0, 34)); // NOI18N
+        emailLog.setForeground(new java.awt.Color(178, 178, 177));
+        emailLog.setText("Masukkan Email Kamu");
+        loginPage.add(emailLog, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 460, 510, 70));
 
         txtEmailLog.setBackground(new java.awt.Color(243, 248, 251));
-        txtEmailLog.setFont(new java.awt.Font("Poppins", 1, 36)); // NOI18N
-        txtEmailLog.setForeground(new java.awt.Color(121, 64, 2));
+        txtEmailLog.setFont(new java.awt.Font("Poppins", 0, 34)); // NOI18N
+        txtEmailLog.setForeground(new java.awt.Color(51, 51, 51));
         txtEmailLog.setBorder(null);
         txtEmailLog.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
@@ -267,8 +267,8 @@ public class game extends javax.swing.JFrame {
         loginPage.add(txtEmailLog, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 470, 500, 50));
 
         txtPassLog.setBackground(new java.awt.Color(243, 248, 251));
-        txtPassLog.setFont(new java.awt.Font("Poppins", 1, 36)); // NOI18N
-        txtPassLog.setForeground(new java.awt.Color(121, 64, 2));
+        txtPassLog.setFont(new java.awt.Font("Poppins", 0, 34)); // NOI18N
+        txtPassLog.setForeground(new java.awt.Color(51, 51, 51));
         txtPassLog.setBorder(null);
         txtPassLog.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
@@ -446,25 +446,29 @@ public class game extends javax.swing.JFrame {
 
         accountPage.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        pwAcc.setFont(new java.awt.Font("Poppins", 1, 36)); // NOI18N
-        pwAcc.setForeground(new java.awt.Color(121, 64, 2));
-        pwAcc.setText("Password");
-        accountPage.add(pwAcc, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 750, 290, 60));
+        pwAcc.setFont(new java.awt.Font("Poppins", 0, 36)); // NOI18N
+        pwAcc.setForeground(new java.awt.Color(250, 227, 200));
+        pwAcc.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        pwAcc.setText("Masukkan Password Kamu");
+        accountPage.add(pwAcc, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 750, 640, 60));
 
-        noTelpAcc.setFont(new java.awt.Font("Poppins", 1, 36)); // NOI18N
-        noTelpAcc.setForeground(new java.awt.Color(121, 64, 2));
-        noTelpAcc.setText("Nomor Telepon");
-        accountPage.add(noTelpAcc, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 600, 290, 60));
+        noTelpAcc.setFont(new java.awt.Font("Poppins", 0, 36)); // NOI18N
+        noTelpAcc.setForeground(new java.awt.Color(250, 227, 200));
+        noTelpAcc.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        noTelpAcc.setText("Masukkan Nomor Telepon Kamu");
+        accountPage.add(noTelpAcc, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 600, 640, 60));
 
-        emailAcc.setFont(new java.awt.Font("Poppins", 1, 36)); // NOI18N
-        emailAcc.setForeground(new java.awt.Color(121, 64, 2));
-        emailAcc.setText("Email");
-        accountPage.add(emailAcc, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 460, 110, 50));
+        emailAcc.setFont(new java.awt.Font("Poppins", 0, 36)); // NOI18N
+        emailAcc.setForeground(new java.awt.Color(250, 227, 200));
+        emailAcc.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        emailAcc.setText("Masukkan Email Kamu");
+        accountPage.add(emailAcc, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 460, 640, 50));
 
-        userAcc.setFont(new java.awt.Font("Poppins", 1, 36)); // NOI18N
-        userAcc.setForeground(new java.awt.Color(121, 64, 2));
-        userAcc.setText("Username");
-        accountPage.add(userAcc, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 310, 210, 50));
+        userAcc.setFont(new java.awt.Font("Poppins", 0, 36)); // NOI18N
+        userAcc.setForeground(new java.awt.Color(250, 227, 200));
+        userAcc.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        userAcc.setText("Masukkan Username Kamu");
+        accountPage.add(userAcc, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 310, 640, 50));
 
         jTable2.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
         jTable2.setModel(new javax.swing.table.DefaultTableModel(
@@ -488,7 +492,7 @@ public class game extends javax.swing.JFrame {
         accountPage.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 280, 540, 610));
 
         akunUsername.setBackground(new java.awt.Color(242, 186, 118));
-        akunUsername.setFont(new java.awt.Font("Poppins", 1, 36)); // NOI18N
+        akunUsername.setFont(new java.awt.Font("Poppins", 0, 36)); // NOI18N
         akunUsername.setForeground(new java.awt.Color(121, 64, 2));
         akunUsername.setBorder(null);
         akunUsername.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -502,7 +506,7 @@ public class game extends javax.swing.JFrame {
         accountPage.add(akunUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 300, 600, 70));
 
         akunEmail.setBackground(new java.awt.Color(242, 186, 118));
-        akunEmail.setFont(new java.awt.Font("Poppins", 1, 36)); // NOI18N
+        akunEmail.setFont(new java.awt.Font("Poppins", 0, 36)); // NOI18N
         akunEmail.setForeground(new java.awt.Color(121, 64, 2));
         akunEmail.setBorder(null);
         akunEmail.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -516,7 +520,7 @@ public class game extends javax.swing.JFrame {
         accountPage.add(akunEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 460, 600, 50));
 
         akunNoTelp.setBackground(new java.awt.Color(242, 186, 118));
-        akunNoTelp.setFont(new java.awt.Font("Poppins", 1, 36)); // NOI18N
+        akunNoTelp.setFont(new java.awt.Font("Poppins", 0, 36)); // NOI18N
         akunNoTelp.setForeground(new java.awt.Color(121, 64, 2));
         akunNoTelp.setBorder(null);
         akunNoTelp.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -530,7 +534,7 @@ public class game extends javax.swing.JFrame {
         accountPage.add(akunNoTelp, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 600, 600, 60));
 
         akunPassword.setBackground(new java.awt.Color(242, 186, 118));
-        akunPassword.setFont(new java.awt.Font("Poppins", 1, 36)); // NOI18N
+        akunPassword.setFont(new java.awt.Font("Poppins", 0, 36)); // NOI18N
         akunPassword.setForeground(new java.awt.Color(121, 64, 2));
         akunPassword.setBorder(null);
         akunPassword.addFocusListener(new java.awt.event.FocusAdapter() {
